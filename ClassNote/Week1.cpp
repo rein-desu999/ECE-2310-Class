@@ -108,3 +108,43 @@ Pointer contains the address of a variable, and that return a specific value.
 
 
 //Array and Vector
+/*
+    Array: a fixed-size collection of elements of the same type]
+    The value of a built in array name is the address of the first element of the array
+        - So arrayName is implicitly converted to a pointer to &arrayName[0]
+    You dont need to take the address (&) of an array name to pass it to a function
+    For built-in arrays, the called functiobn can modify the elements of the array
+
+    Ex: int arr[100,200,300,400,500];
+    arr[3] = 400;
+    size of arr = 5;
+
+    Trade-offs:
+    Search via 0(n);        no matter how many elements are in the array, the time to search is the same
+    Change size 0(1);       no
+    
+    You can declare built in array parameter in a function
+    int sumElements( const int values[], const size_t numberofElements){
+        int sum{0};
+        for(size_t i{0}; i < numberofElements; i++){
+            sum += values[i];
+        }
+        return sum;
+    }
+    can also be wrote as
+    int sumElements( const int* values, const size_t numberofElements){
+        int sum{0};
+        for(size_t i{0}; i < numberofElements; i++){
+            sum += values[i];
+        }
+        return sum;
+    }
+
+    **The compiler does not differentiate between an array and a pointer to the first element of the array
+
+    Built in array limitations: 
+        - Fixed size
+        - No bounds checking
+        - No copy or assignment
+        - No comparison
+*/
