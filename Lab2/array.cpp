@@ -30,5 +30,12 @@ int main(){
     incArrBy10(arr,SIZE);
     printf("After-----------------\n");
     printMemArr(arr,SIZE);
+
+    int* firstaddress = &arr[0];
+    int* secondaddress = &arr[SIZE-1];
+    ptrdiff_t element_diff = secondaddress - firstaddress;
+    size_t byte_diff = element_diff * sizeof(int);
+    cout<<"The difference between the first and second address in elements is: %ld\n"<<element_diff<<endl;
+    cout<<"The difference between the first and second address in bytes is: %ld\n"<<byte_diff<<endl;
     return 0;
 }

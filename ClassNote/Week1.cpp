@@ -147,4 +147,14 @@ Pointer contains the address of a variable, and that return a specific value.
         - No bounds checking
         - No copy or assignment
         - No comparison
-*/
+
+        Name of the array is also a 'pointer' to the first element of the array
+        4 wayys to pass a pointer to function:
+            - Pass by nonconstant pointer to nonconstant data
+            - Pass by constant pointer to nonconstant data
+            - Pass by nonconstant pointer to constant data
+            - Pass by constant pointer to constant data
+        Teh highest access is granted by a nonconstant pointer to nonconstant data
+
+        nonconstant pointer to nonconstant data: Ex: cost int* countPtr
+*/      
