@@ -19,7 +19,7 @@ void printMemVec(const vector<int> & vec){
 */
 void incVecBy10(vector<int> & vec){
     for(int i=0; i < 5;i++){
-       vec.push_back(100+i);
+       vec[i] += 10;
     }
 
 }
