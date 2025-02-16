@@ -18,7 +18,7 @@ void printMemVec(const vector<int> & vec){
     *@param vec - the vector to be incremented
 */
 void incVecBy10(vector<int> & vec){
-    for(int i=0; i < 5;i++){
+    for(int i=0; i < vec.size();i++){
        vec[i] += 10;
     }
 
