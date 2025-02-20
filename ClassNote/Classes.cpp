@@ -128,4 +128,15 @@
 
             If a member function is defined in the class body, the complier attempts to incline calls to the member function
         **
+
+    To run classes files:
+        g++ -o Lab3 La3.cpp Person.h
+        ./Lab3
+*/
+
+
+/*
+    Class Time:
+        Time sunset; //object of type Time
+        
 */
