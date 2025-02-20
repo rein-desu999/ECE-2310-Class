@@ -41,9 +41,3 @@ Person::Person(string name, int age, string occupation, bool lives_in_IE/*islive
     this->lives_in_IE = lives_in_IE; //this-> is used to refer to the class variable
     //lives_in_IE = islive; //if lives_in_IE is used, it will refer to the class variable
 }
-Person::Person(string name, int a, string occupation, bool islive){
-    this->name = name;
-    age = a;
-    this->occupation = occupation;
-    lives_in_IE = islive; //if lives_in_IE is used, it will refer to the class variable
-}

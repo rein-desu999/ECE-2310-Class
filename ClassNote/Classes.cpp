@@ -130,7 +130,7 @@
         **
 
     To run classes files:
-        g++ -o Lab3 La3.cpp Person.h
+        g++ -o Lab3 Lab3.cpp Person.h Person.cpp
         ./Lab3
 */
 
@@ -138,5 +138,11 @@
 /*
     Class Time:
         Time sunset; //object of type Time
-        
+        array<Time, 5> times; //array of 5 Time objects
+        Time* timePtr = nullptr; //pointer to a Time object
+        Time* timePtr = new Time; //dynamically allocated Time object
+        Time* timePtr = new Time[5]; //dynamically allocated array of 5 Time objects
+        Time* timePtr = &sunset; //pointer to a Time object
+        Time* timePtr = times.data(); //pointer to the first element of the array times
+
 */
