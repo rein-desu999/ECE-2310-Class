@@ -17,9 +17,3 @@ void Point::movePoint(double dx, double dy){
 bool Point::IsLeftMost(Point q){
     return x < q.getX();
 }
-double Point::getX() const{
-    return x;
-}
-double Point::getY() const{
-    return y;
-}
