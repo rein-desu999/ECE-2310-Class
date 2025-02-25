@@ -21,3 +21,13 @@
     Constructors and destructor are call integrety
     
 */
+/*
+    Default Memberwise Assignment
+    
+    The assignment operator (=) can be used to assign an object to another object of the same class
+    The default memberwise assignment operator copies the member variables of the right-hand object to the left-hand object
+
+    Object may be passed as function arguments and may be returned from functions
+    When an object is passed as an argument, the object is passed by value
+    When an object is returned from a function, the object is returned by value
+*/
