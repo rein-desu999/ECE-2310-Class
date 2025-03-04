@@ -31,7 +31,7 @@ int main() {
         }
 
         cout << "---" << endl;
-        cout << player1.getName() <<" health: " << player2.getHealth() << " health: " << player2.getHealth() << endl;
+        cout << player1.getName() << " health: " << player1.getHealth() << player2.getName() <<" health: " << player2.getHealth() << endl;
 
         // MPC's turn
         cout << player2.getName() <<"'s turn" << endl;
