@@ -67,6 +67,14 @@ void RPG::useSkill(RPG *target, string skill){
     target->updateHealth(target->getHealth() - damage);
     printAction(skill, *target);
 }
+void RPG::attack(RPG *target) {
+    int damage = strength - target->getDefense();
+    if (damage < 0) {
+        damage = 0;
+    }
+    target->updateHealth(target->getHealth() - damage);
+    printAction("attack", *target);
+}
 void RPG::printAction(string skill, RPG target){
     printf("%s used %s on %s\n", name.c_str(), skill.c_str(), target.getName().c_str());
 }
