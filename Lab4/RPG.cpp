@@ -69,7 +69,6 @@ void RPG::useSkill(RPG *target){
 
     if(chosen_skill_index <0 || chosen_skill_index >= SKILL_SIZE){
         cout<< "Invalid choice. Skipping turn.\n";
-        return;
     }
 
     string chosen_skill = skills[chosen_skill_index];
