@@ -59,13 +59,22 @@ void RPG::setSkills(){
 void RPG::updateHealth(int new_health){
     this->health = new_health;
 }
-void RPG::useSkill(RPG *target, string skill){
-    int damage = (strength *2) - target->getDefense();
-    if(damage < 0){
-        damage = 0;
+void RPG::useSkill(RPG *target){
+    for( int i=0; i< SKILL_SIZE; i++){
+        printf("Skill %i: %s\n", i, skills[i].c_str());
     }
-    target->updateHealth(target->getHealth() - damage);
-    printAction(skill, *target);
+    int chosen_skill_index;
+    cout<<"Choose a skill to use: Enter 0 or 1?\n";
+    cin>> chosen_skill_index;
+
+    if(chosen_skill_index <0 || chosen_skill_index >= SKILL_SIZE){
+        cout<< "Invalid choice. Skipping turn.\n";
+        return;
+    }
+
+    string chosen_skill = skills[chosen_skill_index];
+    printAction(chosen_skill, *target);
+    attack(target);
 }
 void RPG::attack(RPG *target) {
     int damage = strength - target->getDefense();

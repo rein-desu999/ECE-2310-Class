@@ -22,7 +22,7 @@ class RPG{
         void setSkills();
         void updateHealth(int new_health);
         void attack(RPG *target);
-        void useSkill(RPG *target, string skill);
+        void useSkill(RPG *target);
         void printAction(string action, RPG target);
     private:
         string name;
