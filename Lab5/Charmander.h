@@ -13,7 +13,7 @@ class Charmander : public Pokemon {
 
         void speak() /*override*/;
         void printStats() /*override*/;
-    private:
+    protected:
         vector<string> skills;
 };
 #endif
