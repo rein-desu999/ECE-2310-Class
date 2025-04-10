@@ -25,5 +25,5 @@ int main(){
     c1->speak(); //or (*c1).speak();
     //Charmander
     cout << "\n-----Print Stats-----\n";
-    charlie.printStat();
+    charlie.printStats();
 }
